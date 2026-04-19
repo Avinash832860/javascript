@@ -14,6 +14,3 @@ else if(num>=60 && num<=69){
 else{
     console.log("Fail")
 }
-// for (let i=10;i>0;i--){
-//     console.log(i)
-// }
