@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color:black;
+        padding: 30px 35px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    label {
+        color: #ccc;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        background: #2a2a2a;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #888;
+    }
+
+    textarea {
+        resize: none;
+        height: 80px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .btn{
+        border-radius: 10px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email address">
+
+        <label>Subject</label>
+        <input type="text" placeholder="What is this regarding?">
+
+        <label>Message</label>
+        <textarea placeholder="Tell us more about your inquiry or feedback..."></textarea>
+
+        <button class="btn">SEND MESSAGE</button>
+    </form>
+</div>
+
+</body>
+</html>
