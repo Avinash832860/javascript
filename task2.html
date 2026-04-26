@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 6px solid black;
+            width: 700px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .header {
+            border: 6px solid black;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .middle {
+            display: flex;
+            flex: 1;
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            border: 6px solid black;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .content {
+            border: 6px solid black;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            border: 6px solid black;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">Header</div>
+
+        <div class="middle">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </div>
+
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
